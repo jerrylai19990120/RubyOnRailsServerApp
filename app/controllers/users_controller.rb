@@ -6,4 +6,9 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:username])
   end
+
+  def test
+    render :string=>"test route"
+  end
+
 end

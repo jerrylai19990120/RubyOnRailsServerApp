@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root "users#index"
 
   get "/users", to: "users#index"
-  get "/users/:username", to: "users#show"  
+  get "/users/:username", to: "users#show"
+  get "/testroute", to: "users#test"  
 end
