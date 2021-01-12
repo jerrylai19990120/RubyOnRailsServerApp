@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   
   get "/users", to: "users#index"
   post "/users/:username/:password", to: "users#create"
-  get "/users/:username", to: "users#show"
+  get "/users/:id", to: "users#show"
   
 end

@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
   def index
     @users = User.all
+    render json: @user
   end
 
   def show
-    @user = User.find(params[:username])
+    @user = User.find(params[:id])
     render json: @user
   end
 
@@ -17,6 +18,6 @@ class UsersController < ApplicationController
   def delete
 
   end
-  
+
 
 end
