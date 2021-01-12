@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root "users#index"
   resources :users
 
-  get "/users", to: "users#index"
-  get "/users/:username", to: "users#show"
-  get "/users/getUser", to: "users#getUser"
-  post "/users/createUser", to: "users#createUser"
+  GET "/users", to: "users#index"
+  GET "/users/:username", to: "users#show"
+  GET "/users/getUser", to: "users#getUser"
+  POST "/users/createUser", to: "users#createUser"
 end
