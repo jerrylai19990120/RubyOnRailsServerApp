@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def index
-    @user = User.all()
-    render json: @user
+    
+    render string: "success"
   end
 
   def show
