@@ -8,8 +8,8 @@ class UsersController < ApplicationController
   end
 
   def getUser
-    @user = User.new(username:'me', password:'123456')
-    render :json=> @user
+    @user = User.find(params[:id=>1])
+    render json: @user
   end
 
 end
