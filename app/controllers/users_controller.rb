@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     render json: @user
   end
 
-  def createUser
+  def create
     @user = User.new(username:'hello', password:'world')
     render json: @user
   end
