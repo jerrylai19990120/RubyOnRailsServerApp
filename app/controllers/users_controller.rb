@@ -7,8 +7,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:username])
   end
 
-  def test
-    render :string=>"test route"
+  def getUser
+    @user = User.new(username:'me', password:'123456')
+    render :json=> @user
   end
 
 end

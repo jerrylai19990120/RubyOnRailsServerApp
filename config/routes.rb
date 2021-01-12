@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   get "/users", to: "users#index"
   get "/users/:username", to: "users#show"
-  get "/testroute", to: "users#test"  
+  get "/getUser", to: "users#getUser"  
 end
