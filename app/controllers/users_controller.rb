@@ -14,7 +14,8 @@ class UsersController < ApplicationController
   end
 
   def createUser
-    render json: ActionDispatch::Request
+    @user = User.new(username:'hello', password:'world')
+    render json: @user
   end
 
 end
