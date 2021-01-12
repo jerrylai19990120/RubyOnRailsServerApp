@@ -9,9 +9,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(username:params[:username], password:[:password])
+    @user = User.new(username:params[:username], password:params[:password])
     @user.save
     render json: @user
   end
+
+  def delete
+
+  end
+  
 
 end
