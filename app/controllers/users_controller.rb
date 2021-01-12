@@ -13,4 +13,8 @@ class UsersController < ApplicationController
     render json: @user
   end
 
+  def createUser
+    render json: ActionDispatch::Request
+  end
+
 end
