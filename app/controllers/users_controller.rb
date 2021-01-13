@@ -16,7 +16,10 @@ class UsersController < ApplicationController
   end
 
   def delete
-
+    @user = User.find(params[:id])
+    if @user.delete
+      render json: @user
+    end
   end
 
 
