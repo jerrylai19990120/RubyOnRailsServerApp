@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get "/users", to: "users#index"
   post "/users/:username/:password", to: "users#create"
-  get "/users/:id", to: "users#show"
+  get "/users/:id", to: "users#index"
   delete "/users/:id", to: "users#delete"
   
 end
