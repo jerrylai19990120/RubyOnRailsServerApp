@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = User.find(1)
     render json: @users
   end
 
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     render json: @user
   end
 
-  def createUser
+  def create
     @user = User.new(username:params[:username], password:params[:password])
     @user.save
     render json: @user
