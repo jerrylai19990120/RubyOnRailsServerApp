@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     render json: @user
   end
 
-  def destroy
+  def delete
     @user = User.find(params[:id])
     if @user.delete
       render json: @user
