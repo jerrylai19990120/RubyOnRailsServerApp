@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get "/users", to: "users#index"
   post "/users/create", to: "users#create"
-  get "/users/:id", to: "users#show"
-  delete "/users/:id", to: "users#delete"
+  get "/users/single", to: "users#show"
+  delete "/users/delete", to: "users#delete"
   
 end
